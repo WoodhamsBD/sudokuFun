@@ -3,38 +3,30 @@ var Chai = require('chai'),
     solver = require('./sudoku_solver');
 
 describe('Sudoku Solver', function() {
-  // all tests should be inserted here
-  // var board = '090000006\n' + 
-  //             '000960485\n' +
-  //             '000581000\n' +
-  //             '004000000\n' +
-  //             '517200900\n' +
-  //             '602000370\n' +
-  //             '100804020\n' +
-  //             '706000810\n' +
-  //             '300090000';
+  // all tests here
 
-  var board = '090010480\n' +
-							'000300600\n' +
-							'700090200\n' +
-							'000741000\n' +
-							'003050001\n' +
-							'150000000\n' +
-							'002004000\n' +
-							'074080030\n'; 
-
+  var board = '090000006\n' + 
+              '000960485\n' +
+              '000581000\n' +
+              '004000000\n' +
+              '517200900\n' +
+              '602000370\n' +
+              '100804020\n' +
+              '706000810\n' +
+              '300090000';
   
 
   var parsedBoard;
-  var expectedSolution = [[ 8,9,5,7,4,2,1,3,6 ],
-                        [ 2,7,1,9,6,3,4,8,5 ],
-                        [ 4,6,3,5,8,1,7,9,2 ],
-                        [ 9,3,4,6,1,7,2,5,8 ],
-                        [ 5,1,7,2,3,8,9,6,4 ],
-                        [ 6,8,2,4,5,9,3,7,1 ],
-                        [ 1,5,9,8,7,4,6,2,3 ],
-                        [ 7,4,6,3,2,5,8,1,9 ],
-                        [ 3,2,8,1,9,6,5,4,7 ]];
+
+  // var expectedSolution = [[ 8,9,5,7,4,2,1,3,6 ],
+  //                       [ 2,7,1,9,6,3,4,8,5 ],
+  //                       [ 4,6,3,5,8,1,7,9,2 ],
+  //                       [ 9,3,4,6,1,7,2,5,8 ],
+  //                       [ 5,1,7,2,3,8,9,6,4 ],
+  //                       [ 6,8,2,4,5,9,3,7,1 ],
+  //                       [ 1,5,9,8,7,4,6,2,3 ],
+  //                       [ 7,4,6,3,2,5,8,1,9 ],
+  //                       [ 3,2,8,1,9,6,5,4,7 ]];
 
  //  describe('#parseBoard()', function() {
  //    it('should parse a sudoku board into a 2D array ' +
@@ -133,7 +125,7 @@ describe('Sudoku Solver', function() {
 	// });
 
 	describe('#hardSolution()', function(){
-		it('should solve the hard board', function() {
+		it('should solve the board', function() {
 			var solution = solver.solveSudoku(board);
 		});
 	});
